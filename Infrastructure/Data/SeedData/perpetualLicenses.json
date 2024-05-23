@@ -1,0 +1,101 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Single user Microsoft Office 2016 - Non expiration",
+    "code": "SINGLE-NONEXP-MSOFFICE2016",
+    "description": "Microsoft Office 2016 single user license - non expiration",
+    "price": 100.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 1
+  },
+  {
+    "id": 2,
+    "name": "Single user Microsoft Office 2019 - Non expiration",
+    "code": "SINGLE-NONEXP-MSOFFICE2019",
+    "description": "Microsoft Office 2019 single user license - non expiration",
+    "price": 150.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 2
+  },
+  {
+    "id": 3,
+    "name": "Single user Microsoft Office 2021 - Non expiration",
+    "code": "SINGLE-NONEXP-MSOFFICE2021",
+    "description": "Microsoft Office 2021 single user license - non expiration",
+    "price": 200.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 3
+  },
+  {
+    "id": 4,
+    "name": "Single user Office 365 - Non expiration",
+    "code": "SINGLE-NONEXP-OFFICE365",
+    "description": "Office 365 single user license - non expiration",
+    "price": 250.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 4
+  },
+  {
+    "id": 5,
+    "name": "Single user Windows 10 - Non expiration",
+    "code": "SINGLE-NONEXP-WINDOWS10",
+    "description": "Windows 10 single user license - non expiration",
+    "price": 200.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 5
+  },
+  {
+    "id": 6,
+    "name": "Single user Windows 11 - Non expiration",
+    "code": "SINGLE-NONEXP-WINDOWS11",
+    "description": "Windows 11 single user license - non expiration",
+    "price": 250.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 6
+  },
+  {
+    "id": 7,
+    "name": "Single user Microsoft SQL Server 2016 - Non expiration",
+    "code": "SINGLE-NONEXP-MSSQLSERVER2016",
+    "description": "Microsoft SQL Server 2016 single user license - non expiration",
+    "price": 140.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 7
+  },
+  {
+    "id": 8,
+    "name": "Single user Microsoft SQL Server 2019 - Non expiration",
+    "code": "SINGLE-NONEXP-MSSQLSERVER2019",
+    "description": "Microsoft SQL Server 2019 single user license - non expiration",
+    "price": 170.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 8
+  },
+  {
+    "id": 9,
+    "name": "Single user Microsoft SQL Server 2022 - Non expiration",
+    "code": "SINGLE-NONEXP-MSSQLSERVER2022",
+    "description": "Microsoft SQL Server 2022 single user license - non expiration",
+    "price": 220.0,
+    "quantity": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 9
+  }
+]

@@ -1,0 +1,68 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Microsoft Office 2016",
+    "Code": "MSOFFICE2016",
+    "Description": "Microsoft Office 2016 software description"
+  },
+  {
+    "Id": 2,
+    "Name": "Microsoft Office 2019",
+    "Code": "MSOFFICE2019",
+    "Description": "Microsoft Office 2019 software description"
+  },
+  {
+    "Id": 3,
+    "Name": "Microsoft Office 2021",
+    "Code": "MSOFFICE2021",
+    "Description": "Microsoft Office 2021 software description"
+  },
+  {
+    "Id": 4,
+    "Name": "Office 365",
+    "Code": "OFFICE365",
+    "Description": "Office 365 software description"
+  },
+  {
+    "Id": 5,
+    "Name": "Windows 10",
+    "Code": "WINDOWS10",
+    "Description": "Windows 10 software description"
+  },
+  {
+    "Id": 6,
+    "Name": "Windows 11",
+    "Code": "WINDOWS11",
+    "Description": "Windows 11 software description"
+  },
+  {
+    "Id": 7,
+    "Name": "Microsoft SQL Server 2016",
+    "Code": "MSSQLSERVER2016",
+    "Description": "Microsoft SQL Server 2016 software description"
+  },
+  {
+    "Id": 8,
+    "Name": "Microsoft SQL Server 2019",
+    "Code": "MSSQLSERVER2019",
+    "Description": "Microsoft SQL Server 2019 software description"
+  },
+  {
+    "Id": 9,
+    "Name": "Microsoft SQL Server 2022",
+    "Code": "MSSQLSERVER2022",
+    "Description": "Microsoft SQL Server 2022 software description"
+  },
+  {
+    "Id": 10,
+    "Name": "Microsoft Visual Studio 2019",
+    "Code": "MSVS2019",
+    "Description": "Visual Studio 2019 software description"
+  },
+  {
+    "Id": 11,
+    "Name": "Microsoft Visual Studio 2022",
+    "Code": "MSVS2022",
+    "Description": "Visual Studio 2022 software description"
+  }
+]

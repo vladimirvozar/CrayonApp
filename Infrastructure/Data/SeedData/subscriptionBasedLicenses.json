@@ -1,0 +1,50 @@
+﻿[
+  {
+    "id": 34,
+    "name": "Single user Office 365 Subscription - Monthly Renewal",
+    "code": "SINGLE-MONTHLY-OFFICE365",
+    "description": "Office 365 single user subscription, renew monthly",
+    "price": 15.0,
+    "quantity": 1,
+    "renewalperiod": 0,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 4
+  },
+  {
+    "id": 35,
+    "name": "Single user Office 365 Subscription - Annual Renewal",
+    "code": "SINGLE-ANNUAL-OFFICE365",
+    "description": "Office 365 single user subscription, renew annually",
+    "price": 120.0,
+    "quantity": 1,
+    "renewalperiod": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 4
+  },
+  {
+    "id": 36,
+    "name": "Single user Microsoft Visual Studio 2019 Subscription - Annual Renewal",
+    "code": "SINGLE-ANNUAL-MSVS2019",
+    "description": "Microsoft Visual Studio 2019 single user subscription, renew annually",
+    "price": 100.0,
+    "quantity": 1,
+    "renewalperiod": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 10
+  },
+  {
+    "id": 37,
+    "name": "Single user Microsoft Visual Studio 2022 Subscription - Annual Renewal",
+    "code": "SINGLE-ANNUAL-MSVS2022",
+    "description": "Microsoft Visual Studio 2022 single user subscription, renew annually",
+    "price": 150.0,
+    "quantity": 1,
+    "renewalperiod": 1,
+    "validFromDate": "0001-01-01T00:00:00",
+    "validToDate": "0001-01-01T00:00:00",
+    "softwareProductId": 11
+  }
+]
