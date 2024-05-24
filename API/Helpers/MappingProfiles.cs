@@ -2,7 +2,7 @@
 using AutoMapper;
 using Domain.Entities;
 
-namespace API.Mappings
+namespace API.Helpers
 {
     public class MappingProfiles : Profile
     {

@@ -1,13 +1,29 @@
 ﻿using Domain.Entities;
-using System.Linq.Expressions;
 
 namespace Domain.Specifications
 {
     public class SoftwareProductsWithLicensesSpecification : BaseSpecification<SoftwareProduct>
     {
-        public SoftwareProductsWithLicensesSpecification()
+        public SoftwareProductsWithLicensesSpecification(string sort)
         {
             AddInclude(x => x.Licenses);
+            AddOrderBy(x => x.Name);
+
+            if (!string.IsNullOrEmpty(sort))
+            {
+                switch (sort)
+                {
+                    case "codeAsc":
+                        AddOrderBy(x => x.Code);
+                        break;
+                    case "codeDesc":
+                        AddOrderByDescending(x => x.Code);
+                        break;
+                    default:
+                        AddOrderBy(x => x.Name);
+                        break;
+                }
+            }
         }
 
         public SoftwareProductsWithLicensesSpecification(int id) 
