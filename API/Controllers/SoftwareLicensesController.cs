@@ -1,4 +1,5 @@
 ﻿using API.Dtos;
+using API.Errors;
 using AutoMapper;
 using Domain.Entities;
 using Domain.Interfaces;
@@ -7,9 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class SoftwareLicensesController : ControllerBase
+    public class SoftwareLicensesController : BaseApiController
     {
         private readonly IGenericRepository<SoftwareProduct> _softwareProductRepository;
         private readonly IMapper _mapper;
@@ -34,6 +33,12 @@ namespace API.Controllers
         {
             var spec = new SoftwareProductsWithLicensesSpecification(id);
             var softwareProduct = await _softwareProductRepository.SingleOrDefaultAsync(spec);
+
+            if (softwareProduct == null)
+            {
+                return NotFound(new ApiResponse(404));
+            }
+
             return Ok(_mapper.Map<SoftwareProductDto>(softwareProduct));
         }
     }
