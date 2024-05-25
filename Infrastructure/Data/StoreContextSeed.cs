@@ -1,9 +1,10 @@
 ﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
 namespace Infrastructure.Data
 {
-    public class StoreContextSeed
+    public static class StoreContextSeed
     {
         public static async Task SeedAsync(StoreContext context)
         {
@@ -41,6 +42,40 @@ namespace Infrastructure.Data
             {
                 await context.SaveChangesAsync();
             }
+        }
+
+        internal static void SeedLicenseStatuses(this ModelBuilder builder)
+        {
+            builder.Entity<LicenseStatus>().HasData(
+                new LicenseStatus { Id = 1, Code = "NA", Description = "Not Activated" },
+                new LicenseStatus { Id = 2, Code = "ACT", Description = "Active" },
+                new LicenseStatus { Id = 3, Code = "EXP", Description = "Expired" },
+                new LicenseStatus { Id = 4, Code = "CA", Description = "Cancelled" }
+                );
+        }
+
+        internal static void SeedCustomerWithAddress(this ModelBuilder builder)
+        {
+            builder.Entity<Address>().HasData(
+                new Address
+                { 
+                    Id = 1,
+                    City = "New York",
+                    PostalCode = "21345",
+                    State = "New York",
+                    StreetAddressLine = "Main Street 32"
+                });
+
+            builder.Entity<Customer>().HasData(
+                new Customer 
+                { 
+                    Id = 1,
+                    FirstName = "John",
+                    LastName = "Smith",
+                    Email = "john.smith@mailinator.com",
+                    Phone = "123-456",
+                    AddressId = 1
+                });
         }
     }
 }

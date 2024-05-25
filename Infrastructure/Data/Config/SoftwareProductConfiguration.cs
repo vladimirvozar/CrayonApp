@@ -8,6 +8,8 @@ namespace Infrastructure.Data.Config
     {
         public void Configure(EntityTypeBuilder<SoftwareProduct> builder)
         {
+            builder.ToTable("SoftwareProduct");
+
             builder.HasKey(sp => sp.Id);
 
             builder.Property(sp => sp.Name)

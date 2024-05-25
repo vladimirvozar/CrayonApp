@@ -8,7 +8,7 @@ namespace Infrastructure.Data.Config
     {
         public void Configure(EntityTypeBuilder<License> builder)
         {
-            builder.ToTable("Licenses");
+            builder.ToTable("License");
 
             builder.HasKey(l => l.Id);
 
@@ -21,7 +21,7 @@ namespace Infrastructure.Data.Config
                 .HasMaxLength(50);
 
             builder.Property(l => l.Price)
-                .HasColumnType("decimal(18,2)");
+                .IsRequired();
 
             builder.Property(l => l.Description)
                 .IsRequired()
