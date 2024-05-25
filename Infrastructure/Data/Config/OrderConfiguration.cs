@@ -34,6 +34,9 @@ namespace Infrastructure.Data.Config
             builder.Property(o => o.Price)
                 .IsRequired();
 
+            builder.Property(o => o.Price)
+                .IsRequired();
+
             builder.HasOne(o => o.Customer)
                 .WithMany(c => c.Orders)
                 .HasForeignKey(c => c.CustomerId);

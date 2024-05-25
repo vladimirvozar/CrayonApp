@@ -19,6 +19,6 @@ namespace Domain.Entities
         public int OrderId { get; set; }
         public Order Order { get; set; }
         [JsonIgnore]
-        public List<SoftwareLicenseStatus> SoftwareLicenseStatuses { get; set; }
+        public List<SoftwareLicenseStatus> SoftwareLicenseStatuses { get; set; } = new List<SoftwareLicenseStatus>();
     }
 }

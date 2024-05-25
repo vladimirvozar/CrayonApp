@@ -1,5 +1,5 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces;
+using Infrastructure.Interfaces;
 using System.Collections;
 
 namespace Infrastructure.Data

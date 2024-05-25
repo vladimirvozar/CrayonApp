@@ -4,17 +4,17 @@ using System.Linq.Expressions;
 
 namespace Domain.Interfaces
 {
-    public interface IGenericRepository<T> where T : BaseEntity
-    {
-        Task<T> GetByIdAsync(int id);
-        Task<IReadOnlyList<T>> GetAllAsync();
-        Task<T> SingleOrDefaultAsync(ISpecification<T> spec);
-        Task<IReadOnlyList<T>> FindAsync(ISpecification<T> spec);
-        Task<bool> ExistsAsync(Expression<Func<T, bool>> expression);
-        Task<int> CountAsync(ISpecification<T> spec);
-        void Add(T entity);
-        void AddRange(IEnumerable<T> entities);
-        void Update(T entity);
-        void Delete(T entity);
-    }
+//    public interface IGenericRepository<T> where T : BaseEntity
+//    {
+//        Task<T> GetByIdAsync(int id);
+//        Task<IReadOnlyList<T>> GetAllAsync();
+//        Task<T> SingleOrDefaultAsync(ISpecification<T> spec);
+//        Task<IReadOnlyList<T>> FindAsync(ISpecification<T> spec);
+//        Task<bool> ExistsAsync(Expression<Func<T, bool>> expression);
+//        Task<int> CountAsync(ISpecification<T> spec);
+//        void Add(T entity);
+//        void AddRange(IEnumerable<T> entities);
+//        void Update(T entity);
+//        void Delete(T entity);
+//    }
 }

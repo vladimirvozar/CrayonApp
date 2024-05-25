@@ -3,8 +3,8 @@ using API.Errors;
 using API.Helpers;
 using AutoMapper;
 using Domain.Entities;
-using Domain.Interfaces;
 using Domain.Specifications;
+using Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers

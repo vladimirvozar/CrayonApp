@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
-using Domain.Interfaces;
 using Domain.Specifications;
+using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -28,6 +28,11 @@ namespace Infrastructure.Data
         public async Task<T> SingleOrDefaultAsync(ISpecification<T> spec)
         {
             return await ApplySpecification(spec).SingleOrDefaultAsync();
+        }
+
+        public async Task<T> SingleOrDefaultAsync(Expression<Func<T, bool>> expression)
+        {
+            return await _context.Set<T>().SingleOrDefaultAsync(expression);
         }
 
         public async Task<IReadOnlyList<T>> FindAsync(ISpecification<T> spec)

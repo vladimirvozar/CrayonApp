@@ -1,6 +1,7 @@
 ﻿using API.Errors;
-using Domain.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Interfaces;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,8 +20,8 @@ namespace API.Extensions
                 opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
             });
 
-            // services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IOrderService, OrderService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.Configure<ApiBehaviorOptions>(options =>
