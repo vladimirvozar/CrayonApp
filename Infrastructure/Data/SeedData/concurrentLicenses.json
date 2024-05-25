@@ -2,10 +2,11 @@
   {
     "id": 10,
     "name": "Multi user Microsoft Office 2016 - Non expiration",
-    "code": "MULTI10-NONEXP-MSOFFICE2016",
+    "code": "0C492C8D-F8A0-4E60-B6B4-D0D8CC71F3BD",
     "description": "Microsoft Office 2016 multi user license - non expiration",
     "price": 400.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 1
@@ -13,10 +14,11 @@
   {
     "id": 11,
     "name": "Multi user Microsoft Office 2016 - Non expiration",
-    "code": "MULTI50-NONEXP-MSOFFICE2016",
+    "code": "D59AD978-FEDC-4122-B342-9DA5CB3BB22B",
     "description": "Microsoft Office 2016 multi user license - non expiration",
     "price": 800.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 1
@@ -24,10 +26,11 @@
   {
     "id": 12,
     "name": "Multi user Microsoft Office 2019 - Non expiration",
-    "code": "MULTI10-NONEXP-MSOFFICE2019",
+    "code": "C1E6953C-247D-4890-8F58-0A8CA47B0F29",
     "description": "Microsoft Office 2019 multi user license - non expiration",
     "price": 500.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 2
@@ -35,10 +38,11 @@
   {
     "id": 13,
     "name": "Multi user Microsoft Office 2019 - Non expiration",
-    "code": "MULTI50-NONEXP-MSOFFICE2019",
+    "code": "AD3F296E-F2AD-4F06-8654-CAD666865244",
     "description": "Microsoft Office 2019 multi user license - non expiration",
     "price": 900.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 2
@@ -46,10 +50,11 @@
   {
     "id": 14,
     "name": "Multi user Microsoft Office 2021 - Non expiration",
-    "code": "MULTI10-NONEXP-MSOFFICE2021",
+    "code": "CA59D158-8F4E-4295-B765-1534EBE76C64",
     "description": "Microsoft Office 2021 multi user license - non expiration",
     "price": 600.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 3
@@ -57,10 +62,11 @@
   {
     "id": 15,
     "name": "Multi user Microsoft Office 2021 - Non expiration",
-    "code": "MULTI50-NONEXP-MSOFFICE2021",
+    "code": "0A04A3F8-BB7E-43B5-AB5E-93F5F837C99E",
     "description": "Microsoft Office 2021 multi user license - non expiration",
     "price": 1000.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 3
@@ -68,10 +74,11 @@
   {
     "id": 16,
     "name": "Multi user Office 365 - Non expiration",
-    "code": "MULTI10-NONEXP-OFFICE365",
+    "code": "C6383732-E578-4950-8EC7-EB6A669FD1BE",
     "description": "Office 365 multi user license - non expiration",
     "price": 700.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 4
@@ -79,10 +86,11 @@
   {
     "id": 17,
     "name": "Multi user Office 365 - Non expiration",
-    "code": "MULTI50-NONEXP-OFFICE365",
+    "code": "1D1EDD35-DC7B-4A38-80D9-A7BEA302E81B",
     "description": "Office 365 multi user license - non expiration",
     "price": 1100.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 4
@@ -90,10 +98,11 @@
   {
     "id": 18,
     "name": "Multi user Windows 10 - Non expiration",
-    "code": "MULTI5-NONEXP-WINDOWS10",
+    "code": "41CF5C0E-3C94-4F04-A700-C36BD2A0659B",
     "description": "Windows 10 multi user license - non expiration",
     "price": 300.0,
     "quantity": 5,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 5
@@ -101,10 +110,11 @@
   {
     "id": 19,
     "name": "Multi user Windows 10 - Non expiration",
-    "code": "MULTI20-NONEXP-WINDOWS10",
+    "code": "49EDDDD7-84F5-4669-BCBB-C31DABA10027",
     "description": "Windows 10 multi user license - non expiration",
     "price": 1000.0,
     "quantity": 20,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 5
@@ -112,10 +122,11 @@
   {
     "id": 20,
     "name": "Multi user Windows 10 - Non expiration",
-    "code": "MULTI50-NONEXP-WINDOWS10",
+    "code": "E9C7D3FD-A529-4D0B-A394-AAFCE51CB45A",
     "description": "Windows 10 multi user license - non expiration",
     "price": 1300.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 5
@@ -123,10 +134,11 @@
   {
     "id": 21,
     "name": "Multi user Windows 11 - Non expiration",
-    "code": "MULTI5-NONEXP-WINDOWS11",
+    "code": "3C0987D3-EE4C-4973-BFDC-468F28A974F2",
     "description": "Windows 11 multi user license - non expiration",
     "price": 400.0,
     "quantity": 5,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 6
@@ -134,10 +146,11 @@
   {
     "id": 22,
     "name": "Multi user Windows 11 - Non expiration",
-    "code": "MULTI20-NONEXP-WINDOWS11",
+    "code": "B1E78F7C-53D0-4A97-B41D-F07FD62EE99C",
     "description": "Windows 11 multi user license - non expiration",
     "price": 1200.0,
     "quantity": 20,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 6
@@ -145,10 +158,11 @@
   {
     "id": 23,
     "name": "Multi user Windows 11 - Non expiration",
-    "code": "MULTI50-NONEXP-WINDOWS11",
+    "code": "F493F35C-593C-4E88-83DC-B755541177C2",
     "description": "Windows 11 multi user license - non expiration",
     "price": 1800.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 6
@@ -156,10 +170,11 @@
   {
     "id": 24,
     "name": "Multi user Microsoft SQL Server 2016 - Non expiration",
-    "code": "MULTI10-NONEXP-MSSQLSERVER2016",
+    "code": "40FA3B7C-6630-4F20-8B72-6B1E690B081B",
     "description": "Microsoft SQL Server 2016 multi user license - non expiration",
     "price": 400.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 7
@@ -167,10 +182,11 @@
   {
     "id": 25,
     "name": "Multi user Microsoft SQL Server 2016 - Non expiration",
-    "code": "MULTI50-NONEXP-MSSQLSERVER2016",
+    "code": "31C3A45A-E4AC-493B-B68B-C750931C2BB6",
     "description": "Microsoft SQL Server 2016 multi user license - non expiration",
     "price": 700.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 7
@@ -178,10 +194,11 @@
   {
     "id": 26,
     "name": "Multi user Microsoft SQL Server 2019 - Non expiration",
-    "code": "MULTI10-NONEXP-MSSQLSERVER2019",
+    "code": "269EE4CF-590F-4E8A-A630-40B4FA00ECCC",
     "description": "Microsoft SQL Server 2019 multi user license - non expiration",
     "price": 500.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 8
@@ -189,10 +206,11 @@
   {
     "id": 27,
     "name": "Multi user Microsoft SQL Server 2019 - Non expiration",
-    "code": "MULTI50-NONEXP-MSSQLSERVER2019",
+    "code": "04A27AC7-D02A-4370-9A84-45913A035251",
     "description": "Microsoft SQL Server 2019 multi user license - non expiration",
     "price": 800.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 8
@@ -200,10 +218,11 @@
   {
     "id": 28,
     "name": "Multi user Microsoft SQL Server 2022 - Non expiration",
-    "code": "MULTI10-NONEXP-MSSQLSERVER2022",
+    "code": "DB2414FD-5EE5-4DA8-ADFF-CB40E73C5F79",
     "description": "Microsoft SQL Server 2022 multi user license - non expiration",
     "price": 600.0,
     "quantity": 10,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 9
@@ -211,10 +230,11 @@
   {
     "id": 29,
     "name": "Multi user Microsoft SQL Server 2022 - Non expiration",
-    "code": "MULTI50-NONEXP-MSSQLSERVER2022",
+    "code": "B01DE7A7-15B0-4185-BF16-9BDF44FC63CD",
     "description": "Microsoft SQL Server 2022 multi user license - non expiration",
     "price": 900.0,
     "quantity": 50,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 9
@@ -222,10 +242,11 @@
   {
     "id": 30,
     "name": "Multi user Microsoft Visual Studio 2019 - Non expiration",
-    "code": "MULTI5-NONEXP-MSVS2019",
+    "code": "0C75A824-4979-4C78-9AC0-1B4854F1EB41",
     "description": "Microsoft Visual Studio 2019 multi user license - non expiration",
     "price": 500.0,
     "quantity": 5,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 10
@@ -233,10 +254,11 @@
   {
     "id": 31,
     "name": "Multi user Microsoft Visual Studio 2019 - Non expiration",
-    "code": "MULTI20-NONEXP-MSVS2019",
+    "code": "C5627C71-32A7-43D0-89A1-D864ABADC4C4",
     "description": "Microsoft Visual Studio 2019 multi user license - non expiration",
     "price": 1500.0,
     "quantity": 20,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 10
@@ -244,10 +266,11 @@
   {
     "id": 32,
     "name": "Multi user Microsoft Visual Studio 2022 - Non expiration",
-    "code": "MULTI5-NONEXP-MSVS2022",
+    "code": "BD505127-4018-47E9-934E-E1AC99BD83D9",
     "description": "Microsoft Visual Studio 2022 multi user license - non expiration",
     "price": 700.0,
     "quantity": 5,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 11
@@ -255,10 +278,11 @@
   {
     "id": 33,
     "name": "Multi user Microsoft Visual Studio 2022 - Non expiration",
-    "code": "MULTI20-NONEXP-MSVS2022",
+    "code": "8EDBA8EC-A716-4457-806E-674618E4DADF",
     "description": "Microsoft Visual Studio 2022 multi user license - non expiration",
     "price": 2000.0,
     "quantity": 20,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 11

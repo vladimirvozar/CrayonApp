@@ -13,5 +13,7 @@ namespace Domain.Entities
         public Address Address { get; set; }
         [JsonIgnore]
         public List<Account> Accounts { get; set; }
+        [JsonIgnore]
+        public List<Order> Orders { get; set; }
     }
 }

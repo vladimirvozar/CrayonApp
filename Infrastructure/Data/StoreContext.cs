@@ -30,6 +30,7 @@ namespace Infrastructure.Data
         public DbSet<SoftwareLicense> SoftwareLicense { get; set; }
         public DbSet<SoftwareLicenseStatus> SoftwareLicenseStatuses { get; set; }
         public DbSet<LicenseStatus> LicenseStatuses { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         #endregion
 

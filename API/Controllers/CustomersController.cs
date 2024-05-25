@@ -8,15 +8,23 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class CustomerController : BaseApiController
+    public class CustomersController : BaseApiController
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public CustomerController(IUnitOfWork unitOfWork, IMapper mapper)
+        public CustomersController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<CustomerDto>>> GetCustomersAsync()
+        {
+            var spec = new CustomersWithAddressesSpecification();
+            var customers = await _unitOfWork.Repository<Customer>().FindAsync(spec);
+            return Ok(_mapper.Map<List<CustomerDto>>(customers));
         }
 
         [HttpGet("{id}/accounts")]
@@ -27,7 +35,7 @@ namespace API.Controllers
 
             if (customer == null)
             {
-                return NotFound(new ApiResponse(404, $"Customer with ID: {id} not found"));
+                return NotFound(new ApiResponse(404, $"Customer with ID={id} not found"));
             }
 
             return Ok(_mapper.Map<List<AccountDto>>(customer.Accounts));

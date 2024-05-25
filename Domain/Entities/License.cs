@@ -12,8 +12,7 @@ namespace Domain.Entities
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
-        public DateTime ValidFromDate { get; set; }
-        public DateTime ValidToDate { get; set; }
+        public bool IsSubscription { get; set; }
         [JsonIgnore]
         public SoftwareProduct SoftwareProduct { get; set; }
         public int SoftwareProductId { get; set; }

@@ -12,11 +12,12 @@ namespace Domain.Entities
         public int Quantity { get; set; }
         public DateTime? ValidFromDate { get; set; }
         public DateTime? ValidToDate { get; set; }
-        public bool DoesNotExpire { get; set; }
-        public bool AutoRenew { get; set; }
+        public bool IsSubscription { get; set; }
         public RenewalPeriod? RenewalPeriod { get; set; }
         public int AccountId { get; set; }
         public Account Account { get; set; }
+        public int OrderId { get; set; }
+        public Order Order { get; set; }
         [JsonIgnore]
         public List<SoftwareLicenseStatus> SoftwareLicenseStatuses { get; set; }
     }

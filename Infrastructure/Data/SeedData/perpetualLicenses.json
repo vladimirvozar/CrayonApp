@@ -2,10 +2,11 @@
   {
     "id": 1,
     "name": "Single user Microsoft Office 2016 - Non expiration",
-    "code": "SINGLE-NONEXP-MSOFFICE2016",
+    "code": "BFCCF485-7307-46DB-A857-36DE09695D73",
     "description": "Microsoft Office 2016 single user license - non expiration",
     "price": 100.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 1
@@ -13,10 +14,11 @@
   {
     "id": 2,
     "name": "Single user Microsoft Office 2019 - Non expiration",
-    "code": "SINGLE-NONEXP-MSOFFICE2019",
+    "code": "2EF40ED1-8917-4E2C-8BBF-E02BA2879923",
     "description": "Microsoft Office 2019 single user license - non expiration",
     "price": 150.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 2
@@ -24,10 +26,11 @@
   {
     "id": 3,
     "name": "Single user Microsoft Office 2021 - Non expiration",
-    "code": "SINGLE-NONEXP-MSOFFICE2021",
+    "code": "FF047405-D8F0-42D4-BEF2-DB571BD8A92D",
     "description": "Microsoft Office 2021 single user license - non expiration",
     "price": 200.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 3
@@ -35,10 +38,11 @@
   {
     "id": 4,
     "name": "Single user Office 365 - Non expiration",
-    "code": "SINGLE-NONEXP-OFFICE365",
+    "code": "51864838-AE8F-40B2-8701-8B4EBF9D316A",
     "description": "Office 365 single user license - non expiration",
     "price": 250.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 4
@@ -46,10 +50,11 @@
   {
     "id": 5,
     "name": "Single user Windows 10 - Non expiration",
-    "code": "SINGLE-NONEXP-WINDOWS10",
+    "code": "59119862-6105-4D58-A1F3-51B77058796C",
     "description": "Windows 10 single user license - non expiration",
     "price": 200.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 5
@@ -57,10 +62,11 @@
   {
     "id": 6,
     "name": "Single user Windows 11 - Non expiration",
-    "code": "SINGLE-NONEXP-WINDOWS11",
+    "code": "6AC946EC-8848-4102-8AAE-2974DC4BE2E2",
     "description": "Windows 11 single user license - non expiration",
     "price": 250.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 6
@@ -68,10 +74,11 @@
   {
     "id": 7,
     "name": "Single user Microsoft SQL Server 2016 - Non expiration",
-    "code": "SINGLE-NONEXP-MSSQLSERVER2016",
+    "code": "E26A5431-7787-4CE0-922F-F00753D3876E",
     "description": "Microsoft SQL Server 2016 single user license - non expiration",
     "price": 140.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 7
@@ -79,10 +86,11 @@
   {
     "id": 8,
     "name": "Single user Microsoft SQL Server 2019 - Non expiration",
-    "code": "SINGLE-NONEXP-MSSQLSERVER2019",
+    "code": "E4153B65-B531-4359-AC03-49419B728D6A",
     "description": "Microsoft SQL Server 2019 single user license - non expiration",
     "price": 170.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 8
@@ -90,10 +98,11 @@
   {
     "id": 9,
     "name": "Single user Microsoft SQL Server 2022 - Non expiration",
-    "code": "SINGLE-NONEXP-MSSQLSERVER2022",
+    "code": "F6156A2F-B350-40DF-AA3D-68874B61182F",
     "description": "Microsoft SQL Server 2022 single user license - non expiration",
     "price": 220.0,
     "quantity": 1,
+    "isSubscription": false,
     "validFromDate": "0001-01-01T00:00:00",
     "validToDate": "0001-01-01T00:00:00",
     "softwareProductId": 9

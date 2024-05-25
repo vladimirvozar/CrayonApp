@@ -57,5 +57,23 @@ namespace API.Controllers
 
             return Ok(new Pagination<LicenseDto>(licensesParams.PageIndex, licensesParams.PageSize, totalItems, data));
         }
+
+        [HttpPut("software/licenses")]
+        public async Task<ActionResult<LicenseDto>> UpdateQuantityInSubscriptionAsync(UpdateSubscriptionQuantityDto model)
+        {
+            var spec = new SubscriptionLicenseByCodeSpecification(model.LicenseCode);
+            var license = await _unitOfWork.Repository<License>().SingleOrDefaultAsync(spec);
+
+            if (license == null)
+            {
+                return NotFound(new ApiResponse(404, $"Subscription based license with license code = '{model.LicenseCode}' not found"));
+            }
+            
+            license.Quantity = model.Quantity;
+
+            await _unitOfWork.Complete();
+
+            return _mapper.Map<LicenseDto>(license);
+        }
     }
 }
