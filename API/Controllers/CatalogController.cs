@@ -11,16 +11,12 @@ namespace API.Controllers
 {
     public class CatalogController : BaseApiController
     {
-        private readonly IGenericRepository<SoftwareProduct> _softwareProductRepository;
-        private readonly IGenericRepository<License> _licenseRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public CatalogController(IGenericRepository<SoftwareProduct> softwareProductRepository,
-            IGenericRepository<License> licenseRepository,
-            IMapper mapper)
+        public CatalogController(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _softwareProductRepository = softwareProductRepository;
-            _licenseRepository = licenseRepository;
+            _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
@@ -28,7 +24,7 @@ namespace API.Controllers
         public async Task<ActionResult<List<SoftwareProductDto>>> GetSoftwareProductsAsync(string sort)
         {
             var spec = new SoftwareProductsWithLicensesSpecification(sort);
-            var softwareProducts = await _softwareProductRepository.FindAsync(spec);
+            var softwareProducts = await _unitOfWork.Repository<SoftwareProduct>().FindAsync(spec);
             return Ok(_mapper.Map<List<SoftwareProductDto>>(softwareProducts));
         }
 
@@ -36,7 +32,7 @@ namespace API.Controllers
         public async Task<ActionResult<List<SoftwareProductDto>>> GetSoftwareProductByIdAsync(int id)
         {
             var spec = new SoftwareProductsWithLicensesSpecification(id);
-            var softwareProduct = await _softwareProductRepository.SingleOrDefaultAsync(spec);
+            var softwareProduct = await _unitOfWork.Repository<SoftwareProduct>().SingleOrDefaultAsync(spec);
 
             if (softwareProduct == null)
             {
@@ -53,9 +49,9 @@ namespace API.Controllers
 
             var countSpec = new LicensesWithFiltersForCountSpecification(licensesParams);
 
-            var totalItems = await _licenseRepository.CountAsync(countSpec);
+            var totalItems = await _unitOfWork.Repository<License>().CountAsync(countSpec);
 
-            var licenses = await _licenseRepository.FindAsync(spec);
+            var licenses = await _unitOfWork.Repository<License>().FindAsync(spec);
 
             var data = _mapper.Map<List<LicenseDto>>(licenses);
 

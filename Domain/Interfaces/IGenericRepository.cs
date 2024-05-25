@@ -10,13 +10,11 @@ namespace Domain.Interfaces
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<T> SingleOrDefaultAsync(ISpecification<T> spec);
         Task<IReadOnlyList<T>> FindAsync(ISpecification<T> spec);
-        Task<int> CountAsync(ISpecification<T> spec);
-        Task AddAsync(T entity);
-        Task AddRangeAsync(IEnumerable<T> entities);
-        Task SaveAsync(T entity);
-        Task DeleteAsync(int id);
-        Task DeleteAsync(T entity);
         Task<bool> ExistsAsync(Expression<Func<T, bool>> expression);
-        Task SaveChangesAsync();
+        Task<int> CountAsync(ISpecification<T> spec);
+        void Add(T entity);
+        void AddRange(IEnumerable<T> entities);
+        void Update(T entity);
+        void Delete(T entity);
     }
 }

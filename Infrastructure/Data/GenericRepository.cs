@@ -40,77 +40,31 @@ namespace Infrastructure.Data
             return await ApplySpecification(spec).CountAsync();
         }
 
-        public async Task AddAsync(T entity)
+        public void Add(T entity)
         {
-            if (entity is null)
-            {
-                throw new ArgumentNullException(nameof(entity));
-            }
-
             _context.Set<T>().Add(entity);
-            await _context.SaveChangesAsync();
         }
 
-        public async Task AddRangeAsync(IEnumerable<T> entities)
+        public void AddRange(IEnumerable<T> entities)
         {
-            if (entities is null || !entities.Any())
-            {
-                throw new ArgumentNullException(nameof(entities));
-            }
-
             _context.Set<T>().AddRange(entities);
-            await _context.SaveChangesAsync();
         }
 
-        public async Task SaveAsync(T entity)
+        public void Update(T entity)
         {
-            if (entity is null)
-            {
-                throw new ArgumentNullException(nameof(entity));
-            }
-
-            var existingEntity = await GetByIdAsync(entity.Id);
-            if (existingEntity is null)
-            {
-                throw new ArgumentException($"Invalid entity Id provided: {entity.Id}");
-            }
-
+            _context.Set<T>().Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(int id)
+        public void Delete(T entity)
         {
-            var entity = await GetByIdAsync(id);
-            if (entity is null)
-            {
-                throw new ArgumentException($"Invalid entity Id provided: {id}");
-            }
-
-            _context.Remove(entity);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(T entity)
-        {
-            if (entity is null)
-            {
-                throw new ArgumentNullException(nameof(entity));
-            }
-
-            _context.Remove(entity);
-            await _context.SaveChangesAsync();
+            _context.Set<T>().Remove(entity);
         }
 
         public async Task<bool> ExistsAsync(Expression<Func<T, bool>> expression)
         {
             bool exists = await _context.Set<T>().AnyAsync(expression);
             return exists;
-        }
-
-        public async Task SaveChangesAsync()
-        {
-            await _context.SaveChangesAsync();
         }
 
         private IQueryable<T> ApplySpecification(ISpecification<T> spec)
