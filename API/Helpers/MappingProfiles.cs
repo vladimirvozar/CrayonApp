@@ -10,6 +10,8 @@ namespace API.Helpers
         {
             CreateMap<SoftwareProduct, SoftwareProductDto>();
             CreateMap<License, LicenseDto>();
+
+            CreateMap<Account, AccountDto>();
         }
     }
 }

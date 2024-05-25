@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
@@ -54,8 +55,9 @@ namespace Infrastructure.Data
                 );
         }
 
-        internal static void SeedCustomerWithAddress(this ModelBuilder builder)
+        internal static void SeedCustomerWithAddressAndAccounts(this ModelBuilder builder)
         {
+            // address
             builder.Entity<Address>().HasData(
                 new Address
                 { 
@@ -66,6 +68,7 @@ namespace Infrastructure.Data
                     StreetAddressLine = "Main Street 32"
                 });
 
+            // customer
             builder.Entity<Customer>().HasData(
                 new Customer 
                 { 
@@ -75,6 +78,34 @@ namespace Infrastructure.Data
                     Email = "john.smith@mailinator.com",
                     Phone = "123-456",
                     AddressId = 1
+                });
+
+            // accounts
+            builder.Entity<Account>().HasData(
+                new Account
+                {
+                    Id = 1,
+                    Name = "John's School account",
+                    AccountType = AccountType.School,
+                    CustomerId = 1
+                });
+
+            builder.Entity<Account>().HasData(
+                new Account
+                {
+                    Id = 2,
+                    Name = "John's Business account",
+                    AccountType = AccountType.Business,
+                    CustomerId = 1
+                });
+
+            builder.Entity<Account>().HasData(
+                new Account
+                {
+                    Id = 3,
+                    Name = "John's Premium account",
+                    AccountType = AccountType.Premium,
+                    CustomerId = 1
                 });
         }
     }

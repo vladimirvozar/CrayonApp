@@ -206,6 +206,16 @@ namespace Infrastructure.Migrations
                 columns: new[] { "Id", "AddressId", "Email", "FirstName", "LastName", "MiddleName", "Phone" },
                 values: new object[] { 1, 1, "john.smith@mailinator.com", "John", "Smith", null, "123-456" });
 
+            migrationBuilder.InsertData(
+                table: "Account",
+                columns: new[] { "Id", "AccountType", "CustomerId", "Name" },
+                values: new object[,]
+                {
+                    { 1, 0, 1, "John's School account" },
+                    { 2, 2, 1, "John's Business account" },
+                    { 3, 3, 1, "John's Premium account" }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Account_CustomerId",
                 table: "Account",

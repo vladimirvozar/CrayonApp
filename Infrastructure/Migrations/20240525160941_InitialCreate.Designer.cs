@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20240525152829_InitialCreate")]
+    [Migration("20240525160941_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -42,6 +42,29 @@ namespace Infrastructure.Migrations
                     b.HasIndex("CustomerId");
 
                     b.ToTable("Account", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccountType = 0,
+                            CustomerId = 1,
+                            Name = "John's School account"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccountType = 2,
+                            CustomerId = 1,
+                            Name = "John's Business account"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AccountType = 3,
+                            CustomerId = 1,
+                            Name = "John's Premium account"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Address", b =>

@@ -61,7 +61,7 @@ namespace Infrastructure.Data
 
             // Seed data
             modelBuilder.SeedLicenseStatuses();
-            modelBuilder.SeedCustomerWithAddress();
+            modelBuilder.SeedCustomerWithAddressAndAccounts();
         }
     }
 }

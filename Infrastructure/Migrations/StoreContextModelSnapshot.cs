@@ -39,6 +39,29 @@ namespace Infrastructure.Migrations
                     b.HasIndex("CustomerId");
 
                     b.ToTable("Account", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccountType = 0,
+                            CustomerId = 1,
+                            Name = "John's School account"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccountType = 2,
+                            CustomerId = 1,
+                            Name = "John's Business account"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AccountType = 3,
+                            CustomerId = 1,
+                            Name = "John's Premium account"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Address", b =>
