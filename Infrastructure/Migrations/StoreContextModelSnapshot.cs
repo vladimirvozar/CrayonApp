@@ -341,10 +341,10 @@ namespace Infrastructure.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("ValidFromDate")
+                    b.Property<DateTime>("ValidFromDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("ValidToDate")
+                    b.Property<DateTime>("ValidToDate")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

@@ -21,6 +21,8 @@ namespace Domain.Specifications
 
         public Expression<Func<T, object>> OrderByDescending { get; private set; }
 
+        public List<string> IncludeStrings { get; } = new List<string>();
+
         public int Take { get; private set; }
 
         public int Skip { get; private set; }
@@ -30,6 +32,11 @@ namespace Domain.Specifications
         protected void AddInclude(Expression<Func<T, object>> includeExpression)
         {
             Includes.Add(includeExpression);
+        }
+
+        protected void AddInclude(string includeString)
+        {
+            IncludeStrings.Add(includeString);
         }
 
         protected void AddOrderBy(Expression<Func<T, object>> orderByExpression)

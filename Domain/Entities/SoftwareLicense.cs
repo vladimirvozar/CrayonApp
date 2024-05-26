@@ -10,8 +10,8 @@ namespace Domain.Entities
         public string LicenseName { get; set; }
         public string LicenseCode { get; set; }
         public int Quantity { get; set; }
-        public DateTime? ValidFromDate { get; set; }
-        public DateTime? ValidToDate { get; set; }
+        public DateTime ValidFromDate { get; set; }
+        public DateTime ValidToDate { get; set; }
         public bool IsSubscription { get; set; }
         public RenewalPeriod? RenewalPeriod { get; set; }
         public int AccountId { get; set; }
