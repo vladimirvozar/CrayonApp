@@ -2,8 +2,6 @@
 using API.Errors;
 using AutoMapper;
 using Domain.Entities;
-using Domain.Specifications;
-using Infrastructure.Data;
 using Infrastructure.Dtos;
 using Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -28,7 +26,7 @@ namespace API.Controllers
 
             if (order == null) return BadRequest(new ApiResponse(400, "Problem creating order"));
 
-            return Ok(order);
+            return Ok(_mapper.Map<OrderDto>(order));
         }
     }
 }
