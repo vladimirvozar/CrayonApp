@@ -38,6 +38,31 @@ namespace Infrastructure.Services
             }
 
             await _unitOfWork.Complete();
+            return true;
+        }
+
+        public async Task<bool> ActivateSoftwareLicenseToDateAsync(ActivateLicenseDto model)
+        {
+            var accountSpec = new AccountByIdWithSoftwareLicensesSpecification(model.AccountId);
+            var account = await _unitOfWork.Repository<Account>().SingleOrDefaultAsync(accountSpec);
+
+            // if invalid accountId provided, or if given account does not have license with provided license code, assume activating failed
+            if (account == null || !account.SoftwareLicenses.Any(x => x.LicenseCode == model.LicenseCode))
+            {
+                return false;
+            }
+
+            var licenseActiveStatus = await _unitOfWork.Repository<LicenseStatus>().SingleOrDefaultAsync(ls => ls.Code == "ACT");
+            var licenseToActivate = account.SoftwareLicenses.First(x => x.LicenseCode == model.LicenseCode);
+            licenseToActivate.SoftwareLicenseStatuses.Add(new SoftwareLicenseStatus
+            {
+                LicenseStatusId = licenseActiveStatus.Id,
+                SoftwareLicenseStatusDate = DateTime.UtcNow
+            });
+            licenseToActivate.ValidFromDate = DateTime.UtcNow;
+            licenseToActivate.ValidToDate = DateTime.Parse(model.ValidToDate);
+
+            await _unitOfWork.Complete();
 
             return true;
         }

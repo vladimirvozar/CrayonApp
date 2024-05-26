@@ -48,7 +48,20 @@ namespace API.Controllers
                 return BadRequest(new ApiResponse(400, $"Problem cancelling licenses for account ID = {model.AccountId} and software Code = {model.SoftwareCode}"));
             }
 
-            return Ok(); ;
+            return Ok();
+        }
+
+        [HttpPost("{id:int}/activate")]
+        public async Task<ActionResult> ActivateSoftwareLicenseToDateAsync([FromBody] ActivateLicenseDto model)
+        {
+            var result = await _accountService.ActivateSoftwareLicenseToDateAsync(model);
+
+            if (result == false)
+            {
+                return BadRequest(new ApiResponse(400, $"Problem activating license for account ID = {model.AccountId} and licence Code = {model.LicenseCode}"));
+            }
+
+            return Ok();
         }
     }
 }
