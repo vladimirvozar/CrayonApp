@@ -66,6 +66,7 @@ namespace Infrastructure.Services
             _unitOfWork.Repository<SoftwareLicense>().Add(softwareLicense);
             await _unitOfWork.Complete();
 
+            // set "Not Activated" license status (initial license status)
             var licenseStatus = await _unitOfWork.Repository<LicenseStatus>().SingleOrDefaultAsync(ls => ls.Code == "NA");
 
             softwareLicense.SoftwareLicenseStatuses.Add(new SoftwareLicenseStatus
