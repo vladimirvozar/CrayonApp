@@ -1,2 +1,3 @@
 # Crayon Cloud Sales App
 ...
+[DB model.pdf](https://github.com/user-attachments/files/15739803/DB.model.pdf)
