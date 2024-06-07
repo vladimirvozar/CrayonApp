@@ -48,7 +48,6 @@ namespace Infrastructure.Services
             };
 
             _unitOfWork.Repository<Order>().Add(order);
-            await _unitOfWork.Complete();
 
             // create new SoftwareLicence object
             var softwareLicense = new SoftwareLicense
@@ -61,17 +60,16 @@ namespace Infrastructure.Services
                 IsSubscription = model.IsSubscription,
                 RenewalPeriod = model.RenewalPeriod,
                 AccountId = model.AccountId,
-                OrderId = order.Id
+                Order = order
             };
             _unitOfWork.Repository<SoftwareLicense>().Add(softwareLicense);
-            await _unitOfWork.Complete();
 
             // set "Not Activated" license status (initial license status)
             var licenseStatus = await _unitOfWork.Repository<LicenseStatus>().SingleOrDefaultAsync(ls => ls.Code == "NA");
 
             softwareLicense.SoftwareLicenseStatuses.Add(new SoftwareLicenseStatus
             {
-                SoftwareLicenseId = softwareLicense.Id,
+                SoftwareLicense = softwareLicense,
                 LicenseStatusId = licenseStatus.Id,
                 SoftwareLicenseStatusDate = DateTime.UtcNow
             });
